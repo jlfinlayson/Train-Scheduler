@@ -1,4 +1,3 @@
-
 // Linking Firebase
 var firebaseConfig = {
         apiKey: "AIzaSyAIT13oXrhTVJCwfFnqEOnTUsBKS7zxAmY",
@@ -11,3 +10,14 @@ var firebaseConfig = {
       };
     
 firebase.initializeApp(firebaseConfig);
+
+
+//Create submit button
+
+//Grab user input
+
+//Function for Next Arrival
+
+//Function for Minutes Away
+
+//Push train date to database
