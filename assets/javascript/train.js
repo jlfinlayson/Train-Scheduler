@@ -47,6 +47,12 @@ $("#frequency-input").val("");
 //Push train date to database
 
 //Create new row with content
-
+var newRow = $("<tr>").append(
+    $("<td>").text(trainName),
+    $("<td>").text(trainDestination),
+    $("<td>").text(trainFrequency),
+    $("<td>").text(nextTrain),
+    $("<td>").text(minutesAway)
+  );
 //Append new row to table
-
+$("#train-table > tbody").append(newRow);
