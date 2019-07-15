@@ -11,14 +11,34 @@ var firebaseConfig = {
     
 firebase.initializeApp(firebaseConfig);
 
+var database = firebase.database();
 
 //Create submit button
+$("#add-train-btn").on("click", function(event) {
+    event.preventDefault();
 
 //Grab user input
+var trainName = $("#train-name-input").val().trim();
+var trainDestination = $("#destination-input").val().trim();
+var firstTrain = $("#first-train-input").val().trim();
+var trainFrequency = $("#frequency-input").val().trim();
+
+var newTrain = {
+    name: trainName,
+    destination: trainDestination,
+    first: firstTrain,
+    frequency: trainFrequency
+  };
 
 //Push data to database
+database.ref().push(newTrain);
 
 //Clear content from text boxes
+$("#train-name-input").val("");
+$("#destination-input").val("");
+$("#first-train-input").val("");
+$("#frequency-input").val("");
+});
 
 //Function to calculate "Next Arrival"
 
