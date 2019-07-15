@@ -33,6 +33,14 @@ var newTrain = {
 //Push data to database
 database.ref().push(newTrain);
 
+console.log(newTrain.name);
+console.log(newTrain.destination);
+console.log(newTrain.first);
+console.log(newTrain.frequency);
+
+console.log("Train successfully added");
+
+
 //Clear content from text boxes
 $("#train-name-input").val("");
 $("#destination-input").val("");
@@ -45,14 +53,21 @@ $("#frequency-input").val("");
 //Function to calculate "Minutes Away"
 
 //Push train date to database
-
+database.ref().on("child_added", function(childSnapshot) {
+    var trainName = childSnapshot.val().name;
+    var trainDestination = childSnapshot.val().destination;
+    var firstTrain = childSnapshot.val().first;
+    var trainFrequency = childSnapshot.val().frequency;
+  
 //Create new row with content
 var newRow = $("<tr>").append(
     $("<td>").text(trainName),
     $("<td>").text(trainDestination),
     $("<td>").text(trainFrequency),
-    $("<td>").text(nextTrain),
-    $("<td>").text(minutesAway)
+    // $("<td>").text(nextTrain),
+    // $("<td>").text(minutesAway)
   );
 //Append new row to table
 $("#train-table > tbody").append(newRow);
+
+});
