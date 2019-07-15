@@ -16,8 +16,17 @@ firebase.initializeApp(firebaseConfig);
 
 //Grab user input
 
-//Function for Next Arrival
+//Push data to database
 
-//Function for Minutes Away
+//Clear content from text boxes
+
+//Function to calculate "Next Arrival"
+
+//Function to calculate "Minutes Away"
 
 //Push train date to database
+
+//Create new row with content
+
+//Append new row to table
+
