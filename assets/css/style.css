@@ -1,0 +1,19 @@
+body{
+    background-color: #D1E8E2;
+    font-family: 'Lato', sans-serif;
+}
+
+#add-train-btn{
+    background-color: #116466;
+    color: #FFCB9A;
+}
+
+h1 {
+    color: #FFCB9A;
+    font-size: 60px;
+}
+
+h3 {
+    color: #D1E8E2;
+    font-size: 25px;
+}

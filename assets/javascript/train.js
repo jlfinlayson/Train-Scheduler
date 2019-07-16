@@ -13,6 +13,8 @@ firebase.initializeApp(firebaseConfig);
 
 var database = firebase.database();
 
+$("#ctime").text("Current Time: " + (moment().format("HH:mm")));
+
 //Create submit button
 $("#add-train-btn").on("click", function (event) {
     event.preventDefault();
