@@ -14,4 +14,4 @@ The train scheduler application allows users to track trains by name, destinatio
  
  ### Demo
  
- * [DEMO](https://jlfinlayson.github.io/train/)
+ * [DEMO](https://jlfinlayson.github.io/Train-Scheduler/)
