@@ -1,19 +1,26 @@
 body{
-    background-color: #D1E8E2;
+    background-color: #E6CDB6;
     font-family: 'Lato', sans-serif;
 }
 
 #add-train-btn{
-    background-color: #116466;
-    color: #FFCB9A;
+    background-color: #871B23;
+    color: #E9B42B;
+    border-width: 0px;
 }
 
 h1 {
-    color: #FFCB9A;
+    color: #E9B42B;
     font-size: 60px;
 }
 
+h2 {
+    color:  #E6CDB6;
+    font-size: 30px;
+    text-align: center;
+}
+
 h3 {
-    color: #D1E8E2;
+    color: #E6CDB6;
     font-size: 25px;
 }
